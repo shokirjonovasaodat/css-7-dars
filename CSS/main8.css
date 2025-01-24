@@ -1,0 +1,23 @@
+body{
+    width: 1200px;
+    margin: 200px auto;
+    background-color: black;
+}
+.box{
+    width: 600px;
+    height: 200px;
+    background: linear-gradient(90deg,blue,green,yellow,orange,red);
+    line-height: 190px;
+    
+}
+.h1{
+    color: darkgray;
+    text-align: center; 
+    font-size: 45px;
+}
+.h2{
+    color: darkgray;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -180px;
+}
