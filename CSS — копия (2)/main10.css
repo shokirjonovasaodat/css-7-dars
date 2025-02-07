@@ -1,0 +1,25 @@
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+.box1{
+    width: 600px;
+    height: 200px;
+    background: linear-gradient(0deg,green,blue,red);
+    color: antiquewhite;
+    margin-top: 80px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-align: center;
+}
+.box{
+    width: 600px;
+    height: 200px;
+    background: linear-gradient(90deg,yellow,green,blue,purple);
+    color: antiquewhite;
+    padding-top: 70px;
+    box-sizing: border-box;
+    font-size: 10px;
+    text-align: center;
+}

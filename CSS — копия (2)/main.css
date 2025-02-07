@@ -1,0 +1,243 @@
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.h1{
+    text-shadow: 2px 10px 10px pink, 2px -10px 10px purple;
+}
+.row{
+    width: 100%;
+    display: block;
+}
+.col{
+    width: 30%;
+    display: block;
+    float: left;
+    border-radius: 8px;
+    background-color: white;
+   /* border: 1px solid gray;*/
+   box-shadow: 0 0 10px rgba(80,80,80,0.5);
+   -webkit-box-shadow: 0 0 10px rgba(80,80,80,0.3);
+   -o-box-shadow: 0 0 10px rgba(80,80,80,0.3);
+   -ms-box-shadow: 0 0 10px rgba(80,80,80,0.3);
+   -moz-box-shadow: 0 0 10px rgba(80,80,80,0.3);
+   /* margin:0 20px ; */
+   transition: all 1s ease-in-out;
+}
+.col:hover{
+    transform: skewX(-15deg);
+    background-color: lightgreen;
+    color: white;
+    box-shadow: 0 0 10px rgba(80,80,80,0.8);
+    -webkit-box-shadow: 0 0 10px rgba(80,80,80,0.8);
+
+}
+.sana{
+    padding: 5rem 0;            /* 1rem=16px*/
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: #7de29e;
+    color: white;
+    border-top-right-radius:8px;
+    border-top-left-radius:8px ;
+    background: linear-gradient(50deg,black,red);
+}
+.text-sana{
+    padding: 1.5rem 0;
+    text-align: center;
+}
+.row .col:nth-child(2){
+    margin: 0 5%;
+}
+.row .col:first-child .sana {
+    background-color: indianred;
+    /*background: linear-gradient(0deg,purple,white);*/
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(20deg, #7579e2, #ff85d2);
+}
+.loader-block{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*border: 8px solid rgba(255, 255, 255, 0.5);*/
+    position: relative;
+    top: 40%;
+    left: 40%;
+}
+.loader-item{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 8px solid white;
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    border-bottom: 8px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: loader;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    background-image: url(../rasmlar/1.jfif);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: 100%;
+    background-image: url(../rasmlar/12.jfif);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: 100%;
+    /*animation-direction: alternate-reverse;*/
+}
+.loader-item:nth-child(2){
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    animation-delay: 1.7s;
+
+}
+.loader-item:nth-child(3){
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    animation-delay: 3s;
+}
+.loader-item:nth-child(4){
+    width: 40%;
+    height: 40%;
+    top: 30%;
+    left: 30%;
+    animation-delay: 4s;
+}
+/*
+@keyframes loader{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+*/
+/*
+
+@keyframes loader{
+    0%{
+        transform: rotateY(0) translate(0,0);
+        border-color: green;
+        border-bottom-color:transparent;
+        background-image: url(../rasmlar/baby.jpeg);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+    25%{
+        transform: rotateY(180deg) translate(-400px, 0);
+        border-color: red;
+        border-bottom-color:transparent;
+        background-image: url(../rasmlar/boxcha.jpg);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+    50%{
+        transform: rotateY(360deg) translate(0,-400px);
+        border-color: blue;
+        border-bottom-color:transparent;
+        background-image: url(../rasmlar/pupil.jpg);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+    75%{
+        transform: rotateY(180deg) translate(400px,0);
+        border-color: yellow;
+        border-bottom-color:transparent;
+        background-image: url(../rasmlar/man.jpg);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+    100%{
+        transform: rotateY(0) translate(0,0);
+        border-color:aqua;
+        border-bottom-color:transparent;
+        background-image: url(../rasmlar/grandfather.jpg);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+}
+*/
+@keyframes loader{
+    0%{
+        transform: scale(2) translate(0,0) rotateX(0) skewX(0);
+        border-color: #fff757;
+        background-image: url(../rasmlar/1.jfif);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+        background-image: url(../rasmlar/7.jfif);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+    25%{
+        transform: scale(1.8) translate(-200px,0) rotateX(180deg) skewY(180deg);
+        border-color: #ff786d;
+        background-image: url(../rasmlar/3.jpg);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+        background-image: url(../rasmlar/8.jfif);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+    50%{
+        transform: scale(1.6) translate(0,0) rotateX(0) skewX(0);
+        border-color: #6bff77;
+        background-image: url(../rasmlar/4.jfif);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+        background-image: url(../rasmlar/9.jpg);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+    75%{
+        transform: scale(1.8) translate(200px,0) rotateX(180deg) skewY(180deg);
+        border-color: #979bff;
+        background-image: url(../rasmlar/5.jpg);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+        background-image: url(../rasmlar/10.jfif);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+    100%{
+        transform: scale(2) translate(0,0) rotateX(0) skewX(180deg);
+        border-color: #ffffff;
+        background-image: url(../rasmlar/6.jfif);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+        background-image: url(../rasmlar/11.jfif);
+        background-repeat:no-repeat ;
+        background-position: center center;
+        background-size: 100%;
+    }
+}
